@@ -1,1 +1,7 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/sometestg/Apanel/main/Protected_06.lua"))()
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = " ";
+	Text = "wait";
+	Icon = "rbxthumb://type=Asset&id=11574221331&w=150&h=150"})
+Duration = 16;
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/sometestg/Apanel/main/Protected_07.lua"))()
