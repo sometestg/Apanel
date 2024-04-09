@@ -1,7 +1,148 @@
-game:GetService("StarterGui"):SetCore("SendNotification", { 
-	Title = " ";
-	Text = "wait";
-	Icon = "rbxthumb://type=Asset&id=11574221331&w=150&h=150"})
-Duration = 16;
+if game.CoreGui:FindFirstChild("loading") then
+return
+end
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/sometestg/Apanel/main/Protected_13.lua"))()
+
+local TweenService = game:GetService("TweenService")
+local loading = Instance.new("ScreenGui")
+local loadingscreen = Instance.new("Frame")
+local shadowloading = Instance.new("Frame")
+local umbraShadow = Instance.new("ImageLabel")
+local penumbraShadow = Instance.new("ImageLabel")
+local ambientShadow = Instance.new("ImageLabel")
+local chipimage = Instance.new("ImageLabel")
+local playbutton = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local ImageButton = Instance.new("ImageButton")
+local discordbuttob = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+
+loading.Name = "loading"
+loading.Parent = game:WaitForChild("CoreGui")
+loading.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+loading.DisplayOrder = 34
+loading.ResetOnSpawn = false
+
+loadingscreen.Name = "loading screen"
+loadingscreen.Parent = loading
+loadingscreen.AnchorPoint = Vector2.new(0.5, 0.5)
+loadingscreen.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+loadingscreen.BackgroundTransparency = 0.250
+loadingscreen.BorderColor3 = Color3.fromRGB(0, 0, 0)
+loadingscreen.BorderSizePixel = 0
+loadingscreen.Position = UDim2.new(0.5, 0, 1.498987913, 0)
+loadingscreen.Size = UDim2.new(0.378846169, 0, 0.51497972, 0)
+
+shadowloading.Name = "shadowloading"
+shadowloading.Parent = loadingscreen
+shadowloading.AnchorPoint = Vector2.new(0.5, 0.5)
+shadowloading.BackgroundTransparency = 1.000
+shadowloading.Position = UDim2.new(0.506345212, 0, 0.499214321, 0)
+shadowloading.Size = UDim2.new(1.06268966, 0, 1.09842777, 0)
+shadowloading.ZIndex = 0
+
+umbraShadow.Name = "umbraShadow"
+umbraShadow.Parent = shadowloading
+umbraShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+umbraShadow.BackgroundTransparency = 1.000
+umbraShadow.Position = UDim2.new(0.494028807, 0, 0.469531953, 12)
+umbraShadow.Size = UDim2.new(0.941009223, 0, 0.933911502, 0)
+umbraShadow.ZIndex = 0
+umbraShadow.Image = "rbxassetid://1316045217"
+umbraShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+umbraShadow.ImageTransparency = 0.860
+umbraShadow.ScaleType = Enum.ScaleType.Slice
+umbraShadow.SliceCenter = Rect.new(10, 10, 118, 118)
+
+penumbraShadow.Name = "penumbraShadow"
+penumbraShadow.Parent = shadowloading
+penumbraShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+penumbraShadow.BackgroundTransparency = 1.000
+penumbraShadow.Position = UDim2.new(0.502350092, 0, 0.469531953, 12)
+penumbraShadow.Size = UDim2.new(0.957650483, 0, 0.933911502, 0)
+penumbraShadow.ZIndex = 0
+penumbraShadow.Image = "rbxassetid://1316045217"
+penumbraShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+penumbraShadow.ImageTransparency = 0.880
+penumbraShadow.ScaleType = Enum.ScaleType.Slice
+penumbraShadow.SliceCenter = Rect.new(10, 10, 118, 118)
+
+ambientShadow.Name = "ambientShadow"
+ambientShadow.Parent = shadowloading
+ambientShadow.AnchorPoint = Vector2.new(0.5, 0.5)
+ambientShadow.BackgroundTransparency = 1.000
+ambientShadow.Position = UDim2.new(0.502350092, 0, 0.469531953, 12)
+ambientShadow.Size = UDim2.new(0.957650483, 0, 0.933911502, 0)
+ambientShadow.ZIndex = 0
+ambientShadow.Image = "rbxassetid://1316045217"
+ambientShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+ambientShadow.ImageTransparency = 0.880
+ambientShadow.ScaleType = Enum.ScaleType.Slice
+ambientShadow.SliceCenter = Rect.new(10, 10, 118, 118)
+
+chipimage.Name = "chipimage"
+chipimage.Parent = loadingscreen
+chipimage.AnchorPoint = Vector2.new(0.5, 0.5)
+chipimage.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+chipimage.BackgroundTransparency = 1.000
+chipimage.BorderColor3 = Color3.fromRGB(0, 0, 0)
+chipimage.BorderSizePixel = 0
+chipimage.Position = UDim2.new(0.477157354, 0, 0.28498432, 0)
+chipimage.Size = UDim2.new(0.329187542, 0, 0.465566099, 0)
+chipimage.Image = "http://www.roblox.com/asset/?id=11574221331"
+chipimage.ScaleType = Enum.ScaleType.Fit
+chipimage.ImageTransparency = 1
+
+playbutton.Name = "playbutton"
+playbutton.Parent = loadingscreen
+playbutton.AnchorPoint = Vector2.new(0.5, 0.5)
+playbutton.BackgroundColor3 = Color3.fromRGB(2, 171, 89)
+playbutton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+playbutton.BorderSizePixel = 0
+playbutton.Position = UDim2.new(0.498731017, 0, 0.599449754, 0)
+playbutton.Size = UDim2.new(0.885025024, 0, 0.166823953, 0)
+playbutton.Font = Enum.Font.SourceSans
+playbutton.Text = ""
+playbutton.TextColor3 = Color3.fromRGB(0, 0, 0)
+playbutton.TextSize = 14.000
+
+UICorner.Parent = playbutton
+
+ImageButton.Parent = playbutton
+ImageButton.AnchorPoint = Vector2.new(0.5, 0.5)
+ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton.BackgroundTransparency = 1.000
+ImageButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton.BorderSizePixel = 0
+ImageButton.Position = UDim2.new(0.49940151, 0, 0.501439035, 0)
+ImageButton.Size = UDim2.new(0.314647257, 0, -0.949999154, 0)
+ImageButton.Image = "http://www.roblox.com/asset/?id=6026663699"
+ImageButton.ScaleType = Enum.ScaleType.Fit
+
+discordbuttob.Name = "discordbuttob"
+discordbuttob.Parent = loadingscreen
+discordbuttob.AnchorPoint = Vector2.new(0.5, 0.5)
+discordbuttob.BackgroundColor3 = Color3.fromRGB(0, 69, 231)
+discordbuttob.BorderColor3 = Color3.fromRGB(0, 0, 0)
+discordbuttob.BorderSizePixel = 0
+discordbuttob.Position = UDim2.new(0.498731017, 0, 0.84316045, 0)
+discordbuttob.Size = UDim2.new(0.885025024, 0, 0.162893102, 0)
+discordbuttob.Font = Enum.Font.Unknown
+discordbuttob.Text = "Join Discord"
+discordbuttob.TextColor3 = Color3.fromRGB(255, 255, 255)
+discordbuttob.TextSize = 14.000
+
+UICorner_2.Parent = discordbuttob
+
+discordbuttob.MouseButton1Down:Connect(function()
+discordbuttob.Text = "Coming Soon"
+end)
+
+playbutton.MouseButton1Down:Connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/sometestg/Apanel/main/Protected_20.lua"))()
+loading:Destroy()
+end)
+
+loadingscreen:TweenPosition(UDim2.new(0.5, 0, 0.498987913, 0),"Out","Elastic",0.7)
+wait(0.5)
+TweenService:Create(chipimage, TweenInfo.new(1), {ImageTransparency = 0}):Play()
