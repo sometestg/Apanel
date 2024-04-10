@@ -139,7 +139,7 @@ discordbuttob.Text = "Coming Soon"
 end)
 
 playbutton.MouseButton1Down:Connect(function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/sometestg/Apanel/main/Protected_21.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/sometestg/Apanel/main/Protected_22.lua"))()
 loading:Destroy()
 end)
 
