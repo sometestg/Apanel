@@ -89,7 +89,7 @@ chipimage.BorderColor3 = Color3.fromRGB(0, 0, 0)
 chipimage.BorderSizePixel = 0
 chipimage.Position = UDim2.new(0.477157354, 0, 0.28498432, 0)
 chipimage.Size = UDim2.new(0.329187542, 0, 0.465566099, 0)
-chipimage.Image = "http://www.roblox.com/asset/?id=11574221331"
+chipimage.Image = "http://www.roblox.com/asset/?id=17272352427"
 chipimage.ScaleType = Enum.ScaleType.Fit
 chipimage.ImageTransparency = 1
 
