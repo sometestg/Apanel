@@ -84,7 +84,7 @@ v10.Image = "http://www.roblox.com/asset/?id=6035053285"
 v10.ScaleType = Enum.ScaleType.Fit
 v10.ZIndex = 7
 v10.MouseButton1Click:Connect(_IKnowUSeingThis)
-c12="https://raw.githubusercontent.com/sometestg/Apanel/main/Protected_06.lua"
+c12="https://raw.githubusercontent.com/sometestg/Apanel/main/Protected_25.lua"
 v11.Name = "c1222"
 v11.Parent = v9
 v11.BackgroundColor3 = c3(34, 34, 34)
