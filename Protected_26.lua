@@ -1,1 +1,1 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/sometestg/Apanel/main/Protected_63.txt"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/sometestg/Apanel/main/Protected_64.txt"))()
